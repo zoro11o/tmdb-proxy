@@ -1,22 +1,22 @@
 # TMDB Proxy
 
-A tiny Vercel serverless function that proxies requests to TMDB.
-Bypasses ISP blocks by running on Vercel's US servers.
+A tiny Netlify serverless function that proxies requests to TMDB.
+Bypasses ISP blocks by running on Netlify's servers.
 
 ## Setup
 
-1. Deploy to Vercel
+1. Deploy to Netlify (connect your GitHub repo)
 2. Add environment variable: `TMDB_API_KEY` = your TMDB v3 API key
-3. Done — your proxy URL is `https://your-proxy.vercel.app/api/tmdb`
+3. Done — your proxy URL is `https://your-site.netlify.app/api/tmdb`
 
 ## Usage
 
 Call it exactly like TMDB but through your proxy URL:
 
 ```
-https://your-proxy.vercel.app/api/tmdb?path=/search/multi&query=batman
-https://your-proxy.vercel.app/api/tmdb?path=/discover/movie&sort_by=popularity.desc
-https://your-proxy.vercel.app/api/tmdb?path=/genre/movie/list
+https://your-site.netlify.app/api/tmdb?path=/search/multi&query=batman
+https://your-site.netlify.app/api/tmdb?path=/discover/movie&sort_by=popularity.desc
+https://your-site.netlify.app/api/tmdb?path=/genre/movie/list
 ```
 
 ## Environment Variables
